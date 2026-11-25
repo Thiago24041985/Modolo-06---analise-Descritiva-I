@@ -18,3 +18,34 @@ Desenvolvi a análise visual em Jupyter Notebook, estruturando o código desde o
 * **Matplotlib** (controle de figuras, grades e eixos via `plt.subplots`)
 * **Seaborn** (visualização estatística com `countplot` e `barplot`)
 * **Jupyter Notebook / Google Colab**
+
+
+TAREFA 02 - # 📊 Módulo 06 - Visualização de Dados com Matplotlib e Seaborn (DataSUS)
+
+Repositório dedicado aos estudos e exercícios práticos do **Módulo 06** do curso **Profissão: Cientista de Dados (EBAC)**, focado na exploração visual de variáveis categóricas e contínuas sobre a base de nascidos vivos do **DataSUS** (`SINASC_RO_2019.csv`) utilizando **Matplotlib** e **Seaborn**.
+
+## 💡 Como elaborei este projeto
+
+Estruturei o trabalho em dois notebooks, avançando da visualização de frequências categóricas até a análise de distribuição e dispersão de variáveis numéricas:
+
+### 1. Variáveis Categóricas e Painéis Exploratórios (`Tarefa 01`)
+* **Tratamento de Rótulos:** Limpei textos redundantes na coluna `GESTACAO` (`.str.replace('semanas', '')`) para evitar sobreposição visual nos eixos.
+* **Gráficos em Grade (`plt.subplots`):** Construí uma grade **3x2** com `sns.countplot()` para avaliar a distribuição de `APGAR1`, `APGAR5`, `SEXO`, `GESTACAO` e `ESTCIVMAE`, removendo o eixo excedente com `fig.delaxes()` para manter o layout limpo.
+* **Análise Bivariada:** Utilize `sns.barplot()` para comparar a média da nota de vitalidade (`APGAR5`) conforme o número de consultas pré-natal (`CONSULTAS`).
+* **Painel Consolidado (2x2):** Reuni as frequências de `SEXO`, `GESTACAO`, `CONSULTAS` e `ESTCIVMAE` em um único dashboard comparativo.
+
+### 2. Distribuição e Dispersão de Variáveis Contínuas (`Tarefa 02`)
+* **Detecção de Outliers e Quartis (`sns.boxplot`):** Construí diagramas de caixa (*boxplots*) para avaliar a mediana, amplitude interquartil e valores extremos das variáveis contínuas **`IDADEMAE`** (idade da mãe) e **`PESO`** (peso do recém-nascido).
+* **Histogramas e Densidade (`sns.histplot`):** Plotei histogramas com curva de densidade estimada (`kde=True`) e ajuste de transparência (`alpha=0.15`) para analisar o formato das distribuições de idade materna e peso ao nascer.
+
+## 🛠️ Tecnologias Utilizadas
+* **Python 3**
+* **Pandas** (carregamento de dados e tratamento de strings nos rótulos)
+* **Matplotlib** (controle de figuras, grades e eixos via `plt.subplots`)
+* **Seaborn** (`countplot`, `barplot`, `boxplot` e `histplot` com curva KDE)
+* **Jupyter Notebook / Google Colab**
+
+
+
+
+TAREFA 03 - 
